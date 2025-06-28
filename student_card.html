@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Student Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+        }
+        .student-card {
+            width: 350px;
+            background: rgba(255,255,255,0.96);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(60,73,104,0.18);
+            padding: 40px 28px 30px 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .card-accent {
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, #fc5c7d33 60%, transparent 100%);
+            z-index: 0;
+        }
+        .card-accent2 {
+            position: absolute;
+            bottom: -60px;
+            left: -60px;
+            width: 160px;
+            height: 160px;
+            background: radial-gradient(circle, #6a82fb22 70%, transparent 100%);
+            z-index: 0;
+        }
+        
+        .student-name {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #30315b;
+            margin-bottom: 6px;
+            z-index: 1;
+            letter-spacing: 0.01em;
+        }
+        .student-id {
+            color: #6a82fb;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            font-size: 1em;
+            margin-bottom: 8px;
+            z-index: 1;
+        }
+        .student-details {
+            color: #55556d;
+            font-size: 1.08em;
+            margin-bottom: 4px;
+            z-index: 1;
+        }
+        .school-name {
+            margin-top: 18px;
+            color: #fc5c7d;
+            font-weight: 600;
+            font-size: 1.07em;
+            z-index: 1;
+            letter-spacing: 1px;
+        }
+        .chip {
+            background: linear-gradient(90deg, #6a82fb 60%, #fc5c7d 100%);
+            color: #fff;
+            font-size: 0.93em;
+            font-weight: 600;
+            border-radius: 16px;
+            padding: 4px 16px;
+            display: inline-block;
+            margin: 12px 0 8px 0;
+            box-shadow: 0 2px 8px rgba(252,92,125,0.06);
+            z-index: 1;
+            letter-spacing: 0.5px;
+        }
+        @media (max-width: 420px) {
+            .student-card {
+                width: 98vw;
+                padding: 32px 6vw 28px 6vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="student-card">
+        <div class="card-accent"></div>
+        <div class="card-accent2"></div>
+        <div class="student-name">Aditya Ranjan</div>
+        <div class="student-id">Roll No: 1RV23AI009</div>
+        <div class="chip">Artificial Intelligence and Machine Learning</div>
+        <div class="student-details">Year: 2nd Year</div>
+        <div class="student-details">adityaranjan.ai23@rvce.edu.in</div>
+        <div class="school-name">RV College of Engineering</div>
+    </div>
+</body>
+</html>
